@@ -1,0 +1,53 @@
+#include <iostream>
+
+using namespace std;
+
+/**
+     * @version 1.5
+     * @date 08/06/2023
+     * @autor Senior Erick
+     * @title SegundosaHorasMinutosySegundos
+     * @brief Convierte Segundos a Horas,Minutos y Segundos
+     * */
+
+ /**
+      * @brief Pide segundos y los transforma a Horas,Minutos y Segundos
+      * @param Ningun parametro
+      * @return Horas Minutos y Segundos
+      * @code
+        cout<<"Ingresa los segundos: ";
+        cin>>segundos;
+        @endcode
+      **/
+
+
+
+
+int main()
+{
+    int segundos;
+    float horas;
+    float minutos;
+    float segundo;
+    
+    
+    cout<<"Ingresa los segundo que deseas convertir: ";
+    cin>>segundos;
+    
+   
+    horas = segundos/ 3600;
+    
+    minutos = (horas / 60);
+    for(int i = 0; minutos >= 60; i++)
+    {
+        minutos = minutos - 60;
+    }
+    
+    segundo = minutos / 60;
+    
+    cout<<"La conversion es:"<<horas<<" horas "<<minutos<<"minutos"<<segundo<<"segundos"<<endl;
+    
+    
+
+    return 0;
+}
