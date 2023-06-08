@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+/**
+     * @version 1.1
+     * @date 08/06/2023
+     * @autor Senior Erick
+     * @title MillasMarinas
+     * @brief Convierte Millas Marinas a Metros
+     * */
+
+ /**
+      * @brief Pide millas marinas y las convierte a metros
+      * @param Ningun parametro
+      * @return Metros
+      * @code
+        cout<<"Ingresa los Millas: ";
+        cin>>millas;
+        @endcode
+      **/
+
+
+
+
+int main()
+{
+    float millas;
+    float metros;
+    float millasconst = 1852;
+    
+    cout<<"Ingresa los Millas: ";
+    cin>>millas;
+    
+    
+    metros = millas * millasconst;
+    
+    cout<<"Las millas en marinas en metros son: "<<metros<<"metros."<<endl;
+    
+
+    return 0;
+}
